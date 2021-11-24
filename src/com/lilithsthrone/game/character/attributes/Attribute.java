@@ -193,7 +193,7 @@ public class Attribute {
 	public static AbstractAttribute MAJOR_ARCANE = new AbstractAttribute(false,
 			0,
 			0,
-			100,
+			1000,
 			"arcane",
 			"Arcane",
 			"intelligenceIcon",
@@ -389,7 +389,7 @@ public class Attribute {
 	
 	// Damages:
 
-	public static AbstractAttribute DAMAGE_UNARMED = new AbstractAttribute(true, 0, -80, 100, "unarmed damage", "Unarmed damage", "swordIcon", PresetColour.DAMAGE_TYPE_UNARMED, "martial arts", "martial incompetence", null) {
+	public static AbstractAttribute DAMAGE_UNARMED = new AbstractAttribute(true, 0, -80, 1000, "unarmed damage", "Unarmed damage", "swordIcon", PresetColour.DAMAGE_TYPE_UNARMED, "martial arts", "martial incompetence", null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return "Increases damage dealt from unarmed attacks, including special attacks obtained from non-human bodyparts.";
@@ -410,7 +410,7 @@ public class Attribute {
 		}
 	};
 	
-	public static AbstractAttribute DAMAGE_SPELLS = new AbstractAttribute(true, 0, -80, 100, "spell damage", "Spell damage", "swordIcon", PresetColour.ATTRIBUTE_MANA, "arcane power", "arcane dulling", null) {
+	public static AbstractAttribute DAMAGE_SPELLS = new AbstractAttribute(true, 0, -80, 1000, "spell damage", "Spell damage", "swordIcon", PresetColour.ATTRIBUTE_MANA, "arcane power", "arcane dulling", null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return "Increases spell damage.";
